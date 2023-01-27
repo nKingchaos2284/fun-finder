@@ -1,0 +1,25 @@
+:root 
+{
+    /* main set of colors (fell free to change them) */
+    --sunsetOrange1: #f7987f;
+    --sunsetOrange2: #fb877e;
+    --sunsetYellow: #f7af7e;
+    --sunsetRed: #ea5768;
+    --sunsetLightPurple: #a9a7eb;
+    --sunsetDarkPurple: #7772b6;
+    --sunsetPink: #fb92b8;
+    --light: #f2f2f2;
+  }
+
+  /* Just testing out the colors in a link and div */
+  link
+  {
+    background-color: var(--sunsetOrange1);
+    color: var(--light);
+  }
+  div
+  {
+    background-color: var(--sunsetLightPurple);
+    color: var(--light);
+  }
+  
