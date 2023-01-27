@@ -1,2 +1,3 @@
-# fun-finder
-things to do around you
+# Group Project 1: Fun Finder
+
+## Description 
