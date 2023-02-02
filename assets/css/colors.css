@@ -17,15 +17,21 @@
     background-color: var(--sunsetOrange1);
     color: var(--light);
   }
-  div
+  /* div
   {
     background-color: var(--sunsetLightPurple);
     color: var(--light);
-  }
+  } */
   
   body {
     background: #3A1C71;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, #3A1C71, #D76D77, #FFAF7B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     ;
+  }
+
+  nav
+  {
+    background: #51299c;
+    color: var(--light);
   }
