@@ -4,3 +4,16 @@
      display: flexbox;
 }
 
+footer
+{
+    align-content:center;
+    display: flexbox;
+    align-self: center;
+}
+
+.textSearch
+{
+    display: flexbox;
+    align-content:center;
+}
+

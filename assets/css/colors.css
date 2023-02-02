@@ -7,6 +7,7 @@
     --sunsetRed: #ea5768;
     --sunsetLightPurple: #a9a7eb;
     --sunsetDarkPurple: #7772b6;
+    --headerAndFooter: #51299c;
     --sunsetPink: #fb92b8;
     --light: #f2f2f2;
   }
@@ -32,6 +33,25 @@
 
   nav
   {
-    background: #51299c;
+    background: var(--headerAndFooter);
+    color: var(--light);
+  }
+
+  footer
+  {
+    color: var(--light);
+    background-color: var(--headerAndFooter);
+  }
+
+  .btn
+  {
+    /* temp colors for dropdown */
+    background-color: var(--sunsetDarkPurple);
+    color: var(--light);
+  }
+
+  .dropdown-toggle
+  {
+    background-color: var(--sunsetLightPurple);
     color: var(--light);
   }
