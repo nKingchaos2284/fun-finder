@@ -5,9 +5,12 @@
 }
 
 #recommended {
-    display: flexbox;
+     position: relative;
+    display: flex;
 }
 
 .card {
-
+     position: relative;
+     display: flex;
+     justify-content: space-between;
 }
