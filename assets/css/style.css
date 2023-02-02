@@ -1,5 +1,5 @@
 h1 {
-  display: center flex;
+     display: center flex;
 }
 
 #links
@@ -9,13 +9,17 @@ h1 {
 }
 
 #recommended {
-     position: relative;
-    display: flex;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
 
 .card {
-     position: relative;
-     display: flex;
-     justify-content: space-between;
+     flex-wrap: wrap;
+     flex-direction: column;
+}
+
+.card-img-top {
+     min-height: 200px;
 }
 
