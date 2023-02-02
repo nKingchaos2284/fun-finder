@@ -1,3 +1,12 @@
+<<<<<<< HEAD
 h1 {
   display: center flex;
 }
+=======
+#links
+{
+     align-self: right;
+     display: flexbox;
+}
+
+>>>>>>> 81a66bf00812e3d4162fb3df84801722ffddbeab
