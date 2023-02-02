@@ -1,3 +1,7 @@
+h1 {
+  display: center flex;
+}
+
 #links
 {
      align-self: right;
@@ -14,3 +18,4 @@
      display: flex;
      justify-content: space-between;
 }
+
