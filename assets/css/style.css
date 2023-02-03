@@ -23,17 +23,22 @@ footer
 
 #recommended {
      display: flex;
-     justify-content: space-between;
+     flex-wrap: wrap;
+     justify-content: center;
      align-items: center;
 }
 
 .card {
-     flex-wrap: wrap;
-     flex-direction: column;
+     width: 500px;
+     margin: 25px;
 }
 
 .card-img-top {
-     min-height: 200px;
+     min-height: 300px;
+}
+
+.card-text {
+     font-weight: bold;
 }
 
 
