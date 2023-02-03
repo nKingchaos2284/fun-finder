@@ -55,3 +55,10 @@
     background-color: var(--sunsetLightPurple);
     color: var(--light);
   }
+
+  .titleSearch
+  {
+    color: var(--light);
+    text-decoration: dotted;
+    background-color: #3A1C71;
+  }
