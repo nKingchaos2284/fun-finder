@@ -2,6 +2,10 @@ h1 {
      display: center flex;
 }
 
+h2 {
+     font-size: 45px;
+}
+
 #links
 {
      align-self: right;
@@ -31,6 +35,20 @@ footer
 {
     display: flexbox;
     align-content:center;
+}
+
+#btnContainer {
+     width: 100%;
+     padding: 25px;
+     text-align: center;
+}
+
+#searchBtn {
+     background-color: #51299c;
+     color: white;
+     padding: 20px;
+     width: 150px;
+     font-size: 20px;
 }
 
 #recommended {
