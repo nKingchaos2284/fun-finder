@@ -1,8 +1,8 @@
-const API_KEY = `14951c93f3d11e8ac8bed96dd90e8bc7`;
+const API_KEY = `7fa03b692f6aa3af85af42b2dba34aee`;
 
 const searchTemperature = () => {
     const city = document.getElementById('city-name').value;
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=standard`;
+    const url = `https://api.themoviedb.org/3/movie/550?api_key=7fa03b692f6aa3af85af42b2dba34aee`;
     fetch(url)
         .then(res => res.json())
         .then(data => displayTemperature(data));
@@ -21,11 +21,9 @@ const displayTemperature = temperature => {
     setInnerText('temp', temperature.main.temp);
     setInnerText('weather', temperature.weather[0].main);
 
-    // weather icon settings 
-    const url = ` http://openweathermap.org/img/wn/${temperature.weather[0].icon}@2x.png`;
+    // movie icon settings 
+    const url = `https://api.themoviedb.org/3/movie/550?api_key=7fa03b692f6aa3af85af42b2dba34aee`;
     const imgIcon = document.getElementById('image-icon');
     imgIcon.setAttribute('src', url);
 }
-
-
 
