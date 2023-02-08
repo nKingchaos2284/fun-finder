@@ -26,7 +26,7 @@ THEN I can see the distance from my current location to the activity location
 nkingchaos2284.github.io/fun-finder/
 ```
 ## Images
-![placeholder-img](./assets/images/coming-soon.jpg)
+![placeholder-img](./assets/images/page-ss.png)
 
 ## Lisence
 This project is licensed under the MIT License - see the LICENSE.md file for details.
