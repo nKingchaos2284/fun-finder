@@ -1,0 +1,64 @@
+:root 
+{
+    /* main set of colors (fell free to change them) */
+    --sunsetOrange1: #f7967e;
+    --sunsetOrange2: #fb877e;
+    --sunsetYellow: #f7af7e;
+    --sunsetRed: #ea5768;
+    --sunsetLightPurple: #a9a7eb;
+    --sunsetDarkPurple: #7772b6;
+    --headerAndFooter: #51299c;
+    --sunsetPink: #fb92b8;
+    --light: #f2f2f2;
+  }
+
+  /* Just testing out the colors in a link and div */
+  link
+  {
+    background-color: var(--sunsetOrange1);
+    color: var(--light);
+  }
+  /* div
+  {
+    background-color: var(--sunsetLightPurple);
+    color: var(--light);
+  } */
+  
+  body {
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #3A1C71, #D76D77, #FFAF7B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+  }
+
+  nav
+  {
+    background: var(--headerAndFooter);
+    color: var(--light);
+  }
+
+  footer
+  {
+    color: var(--light);
+    background-color: var(--headerAndFooter);
+  }
+
+  .btn
+  {
+    /* temp colors for dropdown */
+    background-color: var(--sunsetDarkPurple);
+    color: var(--light);
+  }
+
+  .dropdown-toggle
+  {
+    background-color: var(--sunsetLightPurple);
+    color: var(--light);
+  }
+
+  .titleSearch
+  {
+    color: var(--light);
+    text-decoration: dotted;
+    background-color: #3A1C71;
+  }

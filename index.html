@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/colors.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="./assets/js/script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    <title>Fun Finder Version 1.0</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container-fluid">
+          <h1>Fun Finder Version 1.0</h1>
+        </div>
+        <span class="navbar-collapse" id="links">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-item nav-link" href="#">Home</a>
+            <a class="nav-item nav-link" href="#search">Search</a>
+            <a class="nav-item nav-link" href="#results">Results</a>
+            <a class="nav-item nav-link" href="#recommended">Recommended</a>
+          </div>
+        </span>
+      </nav>
+    </header>
+
+    <div id="banner">
+      <!-- banner image goes here -->
+      <img src="./assets/images/sunset-banner.jpg" />
+    </div>
+
+    <div id="welcome">
+      <!-- Webpage Greeting -->
+      <h2>Welcome to Fun Finder!</h2>
+      <p>
+        Enter a location to find attractions, restaurants, and activities in
+        that area. There are also some of the most well known cities in the U.S.
+        to choose from below!
+      </p>
+    </div>
+
+    <section class="searchSect form-inline">
+      <!-- Search Section -->
+      <div class="container-fluid row align-items-center m-2">
+        <!--drop down menus and text inputs in here-->
+        <div class="dropdown col">
+          <!-- first dropdown box -->
+          <button
+            class="btn dropdown-toggle state"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            State
+          </button>
+          <!-- Trying to add a set number of selections for the states and also a scroll wheel. Currently displays all of them and takes up entire screen-->
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">All</a>
+            <a class="dropdown-item" href="#">Alabama</a>
+            <a class="dropdown-item" href="#">Alaska</a>
+            <a class="dropdown-item" href="#">Arizona</a>
+            <a class="dropdown-item" href="#">Arkansas</a>
+            <a class="dropdown-item" href="#">California</a>
+            <a class="dropdown-item" href="#">Colorado</a>
+            <a class="dropdown-item" href="#">Connecticut</a>
+            <a class="dropdown-item" href="#">Delaware</a>
+            <a class="dropdown-item" href="#">Florida</a>
+            <a class="dropdown-item" href="#">Georgia</a>
+            <a class="dropdown-item" href="#">Hawaii</a>
+            <a class="dropdown-item" href="#">Idaho</a>
+            <a class="dropdown-item" href="#">Illinois</a>
+            <a class="dropdown-item" href="#">Indiana</a>
+            <a class="dropdown-item" href="#">Iowa</a>
+            <a class="dropdown-item" href="#">Kansas</a>
+            <a class="dropdown-item" href="#">Kentucky</a>
+            <a class="dropdown-item" href="#">Louisiana</a>
+            <a class="dropdown-item" href="#">Maine</a>
+            <a class="dropdown-item" href="#">Maryland</a>
+            <a class="dropdown-item" href="#">Massachusetts</a>
+            <a class="dropdown-item" href="#">Michigan</a>
+            <a class="dropdown-item" href="#">Minnesota</a>
+            <a class="dropdown-item" href="#">Mississippi</a>
+            <a class="dropdown-item" href="#">Missouri</a>
+            <a class="dropdown-item" href="#">Montana</a>
+            <a class="dropdown-item" href="#">Nebraska</a>
+            <a class="dropdown-item" href="#">Nevada</a>
+            <a class="dropdown-item" href="#">New Hampshire</a>
+            <a class="dropdown-item" href="#">New Jersey</a>
+            <a class="dropdown-item" href="#">New Mexico</a>
+            <a class="dropdown-item" href="#">New York</a>
+            <a class="dropdown-item" href="#">North Carolina</a>
+            <a class="dropdown-item" href="#">North Dakota</a>
+            <a class="dropdown-item" href="#">Ohio</a>
+            <a class="dropdown-item" href="#">Oklahoma</a>
+            <a class="dropdown-item" href="#">Oregon</a>
+            <a class="dropdown-item" href="#">Pennsylvania</a>
+            <a class="dropdown-item" href="#">Rhode Island</a>
+            <a class="dropdown-item" href="#">South Carolina</a>
+            <a class="dropdown-item" href="#">South Dakota</a>
+            <a class="dropdown-item" href="#">Tennessee</a>
+            <a class="dropdown-item" href="#">Texas</a>
+            <a class="dropdown-item" href="#">Utah</a>
+            <a class="dropdown-item" href="#">Vermont</a>
+            <a class="dropdown-item" href="#">Virginia</a>
+            <a class="dropdown-item" href="#">Washington</a>
+            <a class="dropdown-item" href="#">West Virginia</a>
+            <a class="dropdown-item" href="#">Wisconsin</a>
+            <a class="dropdown-item" href="#">Wyoming</a>
+          </div>
+        </div>
+        <!-- Search box -->
+        <div class="col textSearch">
+          <!-- <label for="">Search Location</label> -->
+          <input
+            type="text"
+            class="form-control"
+            id="searchPlace"
+            placeholder="Enter City or Zipcode"
+          />
+        </div>
+        <!-- second dropdown box -->
+        <div class="col dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Filters
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a href="weather.html" class="dropdown-item" href="#">Weather</a>
+            <a class="dropdown-item" href="#">Restraunts</a>
+            <a class="dropdown-item" href="#">Movies</a>
+            <a class="dropdown-item" href="#">Events</a>
+            <a class="dropdown-item" href="#">Bars</a>
+            <a class="dropdown-item" href="#">ECT</a>
+          </div>
+        </div>
+        <!-- third dropdown box -->
+        <div class="col dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Date
+          </button>
+          <!-- Maybe we get the next month or so some how? -->
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">test</a>
+            <a class="dropdown-item" href="#">test2</a>
+            <a class="dropdown-item" href="#">test4, 3 is no more</a>
+          </div>
+        </div>
+      </div>
+      <div id="btnContainer"><button id="searchBtn">Find Fun</button></div>
+    </section>
+
+    <section class="hidden" id="results">
+      <!-- Results -->
+      <h2>Results</h2>
+      <div class="container">
+        <div class="activity-container">
+          <div id="restaurant-results">
+            <h3>Restaurants</h3>
+            <ul>
+              List of restaurants
+            </ul>
+          </div>
+          <div id="movie-results">
+            <h3>Movies</h3>
+            <ul>
+              List of movies
+            </ul>
+          </div>
+          <div id="movie-results">
+            <h3>Events</h3>
+            <ul>
+              List of events
+            </ul>
+          </div>
+          <div id="movie-results">
+            <h3>Bars</h3>
+            <ul>
+              List of bars
+            </ul>
+          </div>
+        </div>
+        <aside id="weather-results">
+          <h3>Weather</h3>
+          <p>Information</p>
+        </aside>
+      </div>
+    </section>
+
+    <div id="recommended">
+      <!-- recommended cities -->
+      <div class="card">
+        <img
+          src="./assets/images/miami-card.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Miami, FL</p>
+        </div>
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Filters
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Weather</a>
+          <a class="dropdown-item" href="#">Restaurants</a>
+          <a class="dropdown-item" href="#">Movies</a>
+          <a class="dropdown-item" href="#">Events</a>
+          <a class="dropdown-item" href="#">Bars</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./assets/images/sandiego-card.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">San Diego, CA</p>
+        </div>
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Filters
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Weather</a>
+          <a class="dropdown-item" href="#">Restaurants</a>
+          <a class="dropdown-item" href="#">Movies</a>
+          <a class="dropdown-item" href="#">Events</a>
+          <a class="dropdown-item" href="#">Bars</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./assets/images/lasvegas-card.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Las Vegas, NV</p>
+        </div>
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Filters
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Weather</a>
+          <a class="dropdown-item" href="#">Restaurants</a>
+          <a class="dropdown-item" href="#">Movies</a>
+          <a class="dropdown-item" href="#">Events</a>
+          <a class="dropdown-item" href="#">Bars</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./assets/images/losangeles-card.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Los Angeles, CA</p>
+        </div>
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Filters
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Weather</a>
+          <a class="dropdown-item" href="#">Restaurants</a>
+          <a class="dropdown-item" href="#">Movies</a>
+          <a class="dropdown-item" href="#">Events</a>
+          <a class="dropdown-item" href="#">Bars</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./assets/images/newyork-card.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">New York City, NY</p>
+        </div>
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Filters
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Weather</a>
+          <a class="dropdown-item" href="#">Restaurants</a>
+          <a class="dropdown-item" href="#">Movies</a>
+          <a class="dropdown-item" href="#">Events</a>
+          <a class="dropdown-item" href="#">Bars</a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="./assets/images/seattle-card.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <p class="card-text">Seattle, WA</p>
+        </div>
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Filters
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Weather</a>
+          <a class="dropdown-item" href="#">Restaurants</a>
+          <a class="dropdown-item" href="#">Movies</a>
+          <a class="dropdown-item" href="#">Events</a>
+          <a class="dropdown-item" href="#">Bars</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <!-- footer stuff goes in here-->
+      <p class="footer container-fluid">Copyright GP-1 2023</p>
+    </footer>
+  </body>
+</html>
