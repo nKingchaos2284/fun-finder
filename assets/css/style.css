@@ -12,6 +12,14 @@ h1 {
      max-width: 100%;
 }
 
+#welcome {
+     width: 100%;
+     position: relative;
+     padding: 75px;
+     text-align: center;
+     font-size: 30px;
+}
+
 footer
 {
     align-content:center;
