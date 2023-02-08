@@ -8,6 +8,10 @@ h1 {
      display: flexbox;
 }
 
+#banner img{
+     max-width: 100%;
+}
+
 footer
 {
     align-content:center;
