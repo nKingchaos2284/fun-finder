@@ -12,13 +12,12 @@ h2 {
      font-size: 45px;
 }
 
-#links
-{
+#links {
      align-self: right;
-     display: flexbox;
+     display: flex;
 }
 
-#banner img{
+#banner img {
      max-width: 100%;
 }
 
@@ -30,16 +29,14 @@ h2 {
      font-size: 30px;
 }
 
-footer
-{
+footer {
     text-align: center; 
     position: relative;
     bottom: 0px;
 }
 
-.textSearch
-{
-    display: flexbox;
+.textSearch {
+    display: flex;
     align-content:center;
 }
 
@@ -119,5 +116,10 @@ footer
      display: none;
 }
 
+#searchbar {
+     display: block;
+     margin: 0 auto;
+     width: 25%;
+}
 
 
