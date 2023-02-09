@@ -1,3 +1,9 @@
+header {
+     z-index: 2;
+     position: fixed;
+     width: 100%;
+}
+
 h1 {
      display: center flex;
 }
@@ -26,9 +32,9 @@ h2 {
 
 footer
 {
-    align-content:center;
-    display: flexbox;
-    align-self: center;
+    text-align: center; 
+    position: relative;
+    bottom: 0px;
 }
 
 .textSearch
