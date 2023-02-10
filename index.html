@@ -17,6 +17,24 @@
     <link rel="stylesheet" href="./assets/css/colors.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
+    <script src="./assets/js/script.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <!-- https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
     <title>Fun Finder Version 1.0</title>
   </head>
@@ -45,72 +63,53 @@
     <div id="welcome">
       <h2>Welcome to Fun Finder!</h2>
       <p>
-        Enter a city and state code to find restaurants, movies, and weather information in
-        that loaction. There are also some of the most well known cities in the U.S.
+        Enter a location to find restaurants, movies, and weather information in
+        that area. There are also some of the most well known cities in the U.S.
         to choose from below!
       </p>
     </div>
-
+    
     <!-- Search Section -->
     <section>
-      <div id="searchbars">
-        <input
-          type="text"
-          class="form-control"
-          id="searchCity"
-          placeholder="City"
-        />
-        <input
-          type="text"
-          class="form-control"
-          id="searchState"
-          maxlength="2"
-          placeholder="State"
-        />
-      </div>
+        <div id="searchbar">
+          <input
+            type="text"
+            class="form-control"
+            id="searchPlace"
+            placeholder="Enter City or Zipcode"
+          />
+        </div>   
       <!-- Search Button -->
-      <div id="btnContainer">
-        <button id="searchBtn">Find Fun</button>
-      </div>
+      <div id="btnContainer"><button id="searchBtn">Find Fun</button></div>
     </section>
     <!-- Results -->
     <section class="hidden" id="results">
       <h2>Results</h2>
       <div class="container">
-        <div id="activity-container">
+        <div class="activity-container">
           <div id="restaurant-results">
             <h3>Restaurants</h3>
-            <ul>
-              List of restaurants
-            </ul>
+            <ul>List of restaurants</ul>
           </div>
           <div id="movie-results">
             <h3>Movies</h3>
-            <ul>
-              List of movies
-            </ul>
+            <ul>List of movies</ul>
           </div>
         </div>
         <aside id="weather-results">
-          <h3>Current Weather</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <h3>Weather</h3>
+          <p>Information</p>
         </aside>
       </div>
     </section>
 
     <!-- recommended cities -->
-    <h2 id="recHeader">Recommended</h2>
     <div id="recommended">
       <div class="card" id="miami">
         <img
           src="./assets/images/miami-card.jpg"
           class="card-img-top"
-          alt="Miami, FL"
+          alt="city of miami"
         />
         <div class="card-body">
           <p class="card-text">Miami, FL</p>
@@ -120,7 +119,7 @@
         <img
           src="./assets/images/sandiego-card.jpg"
           class="card-img-top"
-          alt="San Diego, CA"
+          alt="city of san diego"
         />
         <div class="card-body">
           <p class="card-text">San Diego, CA</p>
@@ -130,7 +129,7 @@
         <img
           src="./assets/images/lasvegas-card.jpg"
           class="card-img-top"
-          alt="Las Vegas, NV"
+          alt="city of las vegas"
         />
         <div class="card-body">
           <p class="card-text">Las Vegas, NV</p>
@@ -140,7 +139,7 @@
         <img
           src="./assets/images/losangeles-card.jpg"
           class="card-img-top"
-          alt="Los Angeles, CA"
+          alt="city of LA"
         />
         <div class="card-body">
           <p class="card-text">Los Angeles, CA</p>
@@ -150,7 +149,7 @@
         <img
           src="./assets/images/newyork-card.jpg"
           class="card-img-top"
-          alt="New York City, NY"
+          alt="city of new york"
         />
         <div class="card-body">
           <p class="card-text">New York City, NY</p>
@@ -160,7 +159,7 @@
         <img
           src="./assets/images/seattle-card.jpg"
           class="card-img-top"
-          alt="Seattle, WA"
+          alt="city of seattle"
         />
         <div class="card-body">
           <p class="card-text">Seattle, WA</p>
@@ -172,24 +171,5 @@
       <!-- footer stuff goes in here-->
       <p>Copyright GP-1 2023</p>
     </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/script.js"></script>
   </body>
 </html>
