@@ -58,7 +58,6 @@ footer {
      text-align: center;
      background-color: #51299c;
      color: white;
-     padding: 5px;
 }
 
 #weather-results {
@@ -77,7 +76,7 @@ footer {
      position: relative;
      display: flex;
      width: 100%;
-     background-color: white;
+     background-color: #51299c;
      border-radius: 15px;
 }
 
@@ -96,6 +95,7 @@ footer {
 .card {
      width: 500px;
      margin: 25px;
+     border-radius: 10px;
 }
 
 .card:hover {
@@ -106,6 +106,7 @@ footer {
 
 .card-img-top {
      min-height: 300px;
+     border-radius: 10px 10px 0px 0px;
 }
 
 .card-text {
@@ -116,10 +117,37 @@ footer {
      display: none;
 }
 
-#searchbar {
-     display: block;
+#searchbars {
+     display: flex;
      margin: 0 auto;
      width: 25%;
 }
 
+input {
+     margin: 10px;
+}
 
+ul {
+     list-style: none;
+}
+
+#weather-results {
+     background-color: white;
+     margin: 15px;
+     border-radius: 10px;
+}
+
+#activity-container {
+     width: 600px;
+     background-color: white;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     border-radius: 10px;
+}
+
+#recHeader {
+     background-color: #51299c;
+     text-align: center;
+     color: white;
+     margin-top: 10px;
+}
