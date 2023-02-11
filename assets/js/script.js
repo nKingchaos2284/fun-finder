@@ -1,5 +1,6 @@
 var searchBtn = document.getElementById("searchBtn");
 var resultsEl = document.querySelector("#results");
+var resultsFor = document.querySelector("#results-for");
 var miamiEl = document.querySelector("#miami");
 var sandiegoEl = document.querySelector("#sandiego");
 var lasvegasEl = document.querySelector("#lasvegas");
@@ -49,6 +50,7 @@ function searchResults() {
           var tempValue = "Temperature: " + Math.round((data.main.temp - 273.15) * 1.8 + 32) + "°F";
           var humidityValue = "Humidity: " + data.main.humidity + "%";
           var windValue = "Wind: " + Math.round(data.wind.speed) + " mph";
+          resultsFor.textContent = "Results for " + cityInput.value + ", " + stateSearch.value;
           weather.textContent = infoValue;
           temperature.textContent = tempValue;
           humidity.textContent = humidityValue;
@@ -95,6 +97,7 @@ function renderRecommended() {
           var tempValue = "Temperature: " + Math.round((data.main.temp - 273.15) * 1.8 + 32) + "°F";
           var humidityValue = "Humidity: " + data.main.humidity + "%";
           var windValue = "Wind: " + Math.round(data.wind.speed) + " mph";
+          resultsFor.textContent = "Results for " + cardValue;
           weather.textContent = infoValue;
           temperature.textContent = tempValue;
           humidity.textContent = humidityValue;
