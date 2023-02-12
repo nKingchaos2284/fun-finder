@@ -114,7 +114,7 @@ function renderRecommended() {
 // search button event listener
 searchBtn.addEventListener("click", searchResults);
 // recommended card event listenersgit add -
-miamiEl.addEventListener('click', getPlaces);
+miamiEl.addEventListener('click', renderRecommended);
 sandiegoEl.addEventListener('click', renderRecommended);
 lasvegasEl.addEventListener('click', renderRecommended);
 losangelesEl.addEventListener('click', renderRecommended);
