@@ -17,15 +17,15 @@ var wind = weatherResults.children[1].children[3];
 
 // function for clicks on search button
 function searchResults() {
-  var apiUrl =
+  var apiUrlWeather =
     "http://api.openweathermap.org/geo/1.0/direct?q=" +
     cityInput.value +
     "," +
     stateSearch.value +
     ",USA" +
     "&appid=14951c93f3d11e8ac8bed96dd90e8bc7";
-  console.log(apiUrl);
-  fetch(apiUrl)
+  console.log(apiUrlWeather);
+  fetch(apiUrlWeather)
     .then(function (response) {
       return response.json();
     })
@@ -33,14 +33,14 @@ function searchResults() {
       var lat = data[0].lat;
       var lng = data[0].lon;
 
-      apiUrl =
+      apiUrlWeather =
         "https://api.openweathermap.org/data/2.5/weather?lat=" +
         lat +
         "&lon=" +
         lng +
         "&appid=14951c93f3d11e8ac8bed96dd90e8bc7";
 
-      fetch(apiUrl)
+      fetch(apiUrlWeather)
         .then(function (response) {
           return response.json();
         })
@@ -59,8 +59,11 @@ function searchResults() {
           resultsEl.classList.add('visible');
         });
     });
+  var apiUrlMovies = 'https://api.themoviedb.org/3/movie/550?api_key=7fa03b692f6aa3af85af42b2dba34aee'
+    fetch(apiUrlMovies)
 };
 
+// functions for clicks on recommended cards
 function renderRecommended() {
   console.log(event.target);
   var card = event.target;
@@ -106,14 +109,12 @@ function renderRecommended() {
           resultsEl.classList.add('visible');
         });
     });
-}
-
-// functions for clicks on recommended cards
+};
 
 // search button event listener
 searchBtn.addEventListener("click", searchResults);
-// recommended card event listeners
-miamiEl.addEventListener('click', renderRecommended);
+// recommended card event listenersgit add -
+miamiEl.addEventListener('click', getPlaces);
 sandiegoEl.addEventListener('click', renderRecommended);
 lasvegasEl.addEventListener('click', renderRecommended);
 losangelesEl.addEventListener('click', renderRecommended);
